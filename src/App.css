@@ -1,0 +1,147 @@
+body {
+  background-color: #6d6767;
+  color: white;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.spinner {
+  height: 80px;
+  margin: auto;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+/* new css for movie component */
+
+* {
+  box-sizing: border-box;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.App-header h2 {
+  margin: 0;
+}
+
+.add-movies {
+  text-align: center;
+}
+
+.button {
+  background-color: crimson;
+}
+
+.movie {
+  padding: 5px 25px 10px 25px;
+  max-width: 25%;
+}
+
+.errorMessage {
+  margin: auto;
+  font-weight: bold;
+  color: rgb(161, 15, 15);
+}
+
+input[type="text"] {
+  color: rgb(128, 0, 0);
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+input[type="submit"] {
+  padding: 5px;
+  background-color: crimson;
+  color: black;
+  border: 1px solid black;
+  width: 80px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(209, 66, 94);
+  color: antiquewhite;
+}
+
+.search > input[type="text"] {
+  width: 40%;
+  min-width: 170px;
+}
+img {
+  border: 3px solid #121213;
+}
+
+img:hover {
+  margin-top: -20%;
+  border: none;
+  box-shadow: rosybrown;
+  transition: 0.3s;
+}
+
+header img:hover {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+  color: sandybrown;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-bottom: 8px;
+}
+
+span {
+  text-align: center;
+  margin: auto;
+}
+
+@media screen and (min-width: 694px) and (max-width: 915px) {
+  .movie {
+    max-width: 33%;
+  }
+}
+
+@media screen and (min-width: 652px) and (max-width: 693px) {
+  .movie {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 651px) {
+  .movie {
+    max-width: 100%;
+    margin: auto;
+  }
+}
